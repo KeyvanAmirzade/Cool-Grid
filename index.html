@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Grid</title>
+  <style>
+    /*made the body flexbox so i can center the grid in middle of screen*/
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      /*inline-grid so the grid don't use the entire screen as container*/
+      display: inline-grid;
+      /*4 rows and 4 columns, creates 5 lines for rows and 5 lines for columns. lines are transparent*/
+      grid-template: 414px 130px 155px 20px /320px 198px 153px 50px;
+      background-color: #000;
+      gap: 9px;
+      
+    }
+    .first{
+      background-color: #E72F24;
+    }
+    .second{
+      background-color: #7D7463;
+      grid-column: 2/5;
+    }
+    .third{
+      grid-column: 1/2;
+      grid-row: 2/4;
+      background-color:#F38181; 
+    }
+    .fourth{
+      grid-column: 2/4;
+      grid-row: 2/4;
+      background-color: #7ABA78;
+    }
+    .fifth{
+      grid-column: 1/2 ;
+      grid-row: 4/5;
+      background-color: #7E1891;
+    }
+    .sixth{
+      grid-column: 2/3;
+      grid-row: 4/5;
+      background-color: #F9D01E;
+    }
+    .seventh{
+      grid-column: 3/4;
+      grid-row: 4/5;
+      background-color: #232629;
+    }
+    .eighth{
+      grid-column: 4/5;
+      grid-row: 3/5;
+      background-color:#10375C ;
+
+    }
+    /*just a little extra border on bottom*/
+    .ninth{
+      grid-column: 4/5;
+      grid-row: 2/3;
+      background-color: #004592 ;
+      border-bottom: 10px solid black;
+    }
+  </style>
+</head>
+
+<body>
+   <div class="container">
+      <div class="first"></div>
+      <div class="second"></div>
+      <div class="third"></div>
+      <div class="fourth"></div>
+      <div class="fifth"></div>
+      <div class="sixth"></div>
+      <div class="seventh"></div>
+      <div class="eighth"></div>
+      <div class="ninth"></div>
+   </div>
+</body>
+
+</html>
